@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Budget Tracker</title>
+</head>
+<body>
+  <h2>Budget Tracker</h2>
+
+  <div class="container">
+    <h4>Your Balance</h4>
+    <h1 id="balance">NGN0.00</h1>
+    
+    <div class="inc-exp container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">NGN 0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money minus">-NGN0.00</p>
+      </div>
+    </div>
+    <!-- End of Income/Expense container -->
+
+    <h3>Add New Transaction</h3>
+    <form id="budget-form" style="box-shadow: 2px 2px 8px rgb(22 52 168 / 30%); padding: 15px;">
+
+      <div>
+          <p align="center" style="font-family: system-ui;text-shadow: 2px 3px 9px grey;font-weight: 500;"> Select Budget Type</p>
+      </div>
+
+      <div class="btn-group" data-toggle="buttons" id="radio-transaction-div">
+        
+        <label class="btn btn-rad btn-secondary active">
+          <input type="radio" name="budget-type" value="income" id="option2" autocomplete="off" checked>Income
+        </label>
+
+        <label class="btn btn-rad btn-secondary">
+          <input type="radio" name="budget-type" value="expense" id="option3" autocomplete="off">Expense
+        </label>
+      </div>
+
+      <div class="form-control">
+        <label for="text">Transaction Name</label>
+        <input type="text" id="text" placeholder="Enter budget Name&hellip;" name="budget-name" required>
+      </div>
+
+      <div class="form-control">
+        <label for="amount">Amount In Naira</label>
+        <input type="number" id="amount" placeholder="Enter amount" name="budget-amount" step="any" required="" min="1">
+      </div>
+
+      <div class="form-control">
+        <label for="amount">Date</label>
+        <input type="date" id="amount" placeholder="" name='budget-date' required>
+
+      </div>
+
+      <button class="btn" type="submit">Add Transaction</button>
+    </form>
+    <!-- End of Transaction Form -->
+
+    <h3>Transaction History</h3>
+    <div>
+      <select name="" id="filter-by">
+        <option value="all" selected>All</option>
+        <option value="income">Income</option>
+        <option value="expense">Expenses</option>
+      </select>
+    </div>
+    <ul id="transactions-list" class="list">
+    </ul>
+
+    
+    <!-- End of Transaction History -->
+  </div> 
+  <!-- End of Budget Container -->
+
+  <script src="./script/index.js"></script>
+</body>
+</html>

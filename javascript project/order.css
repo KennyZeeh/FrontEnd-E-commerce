@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    margin: 100px;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.container{
+    padding: 25px;
+    width: 35%;
+    height: 75%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 25px 40px #1687d933;
+    position: relative;
+}
+
+h2{
+    text-align: left;
+    color: rgb(166, 0, 255);;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;    
+}
+
+input{
+    width: 103px;
+    margin-bottom: 15px;
+}
+#address{
+    width: 335px;
+}
+#city{
+    width: 65px
+}
+#state{
+    width: 135px;
+}
+#code{
+    width: 122px;
+}
+#country{
+    width: 100px;
+}
+
+button{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(166, 0, 255);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+    margin-left: 60%;
+}
+
+form p{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.receipt p{
+    margin-bottom: 20px;
+}
+
+.receipt h1{
+    font-weight: 24px;
+    text-align: center;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.receipt img{
+    margin-top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.receipt h6{
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    color: red;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER NOW</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <h2>PURCHASE REQUEST FORM</h2>
+        <form class="form" action="" method="get"> 
+            <label for="name" class="f_name">First Name</label> &nbsp; &nbsp;
+            <input type="text" name="firstname" id="firstname">
+            &nbsp; &nbsp; &nbsp; 
+            <label for="name" class="o_name">Other Name</label> &nbsp; &nbsp;
+            <input type="text" name="Othername" id="Othername">
+            <br/>
+            <label for="name" class="f_name">Address</label> &nbsp; &nbsp;
+            <input type="text" name="address" id="address">
+            <br/>
+            <label for="name" class="f_name">City</label> &nbsp;
+            <input type="text" name="city" id="city">
+            &nbsp; &nbsp; &nbsp; 
+            <label for="name" class="o_name">State/Province/Region</label> &nbsp;
+            <input type="text" name="state" id="state">
+            <br/>
+            <label for="name" class="f_name">Country</label> &nbsp;
+            <select>
+                <option value="country" name="country" id="country"></option>
+                <option value="country" name="country" id="country">AMERICA</option>
+                <option value="country" name="country" id="country">AUSTRAILLA</option>
+                <option value="country" name="country" id="country">BRAZIL</option>
+                <option value="country" name="country" id="country">CANADA</option>
+                <option value="country" name="country" id="country">NIGERIA</option>
+                <option value="country" name="country" id="country">GHANA</option>
+            </select>
+            &nbsp; &nbsp;
+            <label for="name" class="o_name">Postal/Zip Code</label> &nbsp;
+            <input type="text" name="code" id="code">
+            <br/>
+            <p>Postal Description</p>
+            <textarea name="description" id="description" cols="40" rows="5" style="margin-bottom: 15px;"></textarea>
+        </form>
+        <button type="submit" id="pay">PAYMENT</button>
+    </div>
+    <div class="receipt" style="display: none;"> 
+        <h1>RECEIPT</h1>
+        <p>FIRST NAME: <span id="firstName"></span></p>
+        <p>OTHER NAME: <span id="otherName"></span></p>
+        <p>ADDRESS: <span id="d_address"></span></p>
+        <p>PRICE: <span id="sumPrice"></span></p>
+        <img src="./img/tunzyrestlogo.png" alt="logo">
+        <h6>.... thanks for patronage</h6>
+    </div>
+    <script src="js/order.js"></script>
+</body>
+</html>
